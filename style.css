@@ -123,7 +123,7 @@
 }
 
 .main{
-    background: #EFF1F9;;
+    background: #EFF1F9;
 }
 .title_main{
     margin-left: 48px;
@@ -222,3 +222,114 @@
     background: #D6073D;
     border-radius: 10px;
 }
+
+
+/* LIST */
+.container_list{
+    display: flex;
+}
+.main_list{
+    width: 720px;
+    background: #EFF1F9;
+}
+
+.list_page{
+    margin: 96px 56px 0 48px;
+    height: 359px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+.task{
+    padding-top: 32px;
+    margin: 0 44px 0 40px;
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #BABABA;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.text_task{
+    margin: 0 44px 0 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.text_input{
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #303136;
+}
+.done{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #C2C2C2;
+}
+.done_checkbox{
+    position:absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.done_checkbox+label{
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.done_checkbox+label::before{
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #BABABA;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    margin-right: 7px; 
+}
+.done_checkbox:checked+label::before{
+    background-image: url(./img/list/Union.jpg)
+}
+
+.done_checkbox_second{
+    position:absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.done_checkbox_second+label{
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.done_checkbox_second+label::before{
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #BABABA;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    margin-right: 7px; 
+}
+.done_checkbox_second:checked+label::before{
+    background-image: url(./img/list/Union.jpg);
+}
+
+
+
+
+
+
+
+
