@@ -383,6 +383,21 @@
         }
 
     }
+    @media(max-width:420px){
+        .logo {
+            left: 133px;
+        }
+        .log {
+            left: 63px;  
+        }
+        .password{
+            left: 63px;   
+        }
+        .btn{
+            left: 63px; 
+        }
+
+    }
     @media(max-width:360px){
         .logo {
             width: 157px;
