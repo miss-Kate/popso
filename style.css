@@ -24,6 +24,14 @@
     box-sizing: border-box;
     border-radius: 10px;
 }
+.log:hover{
+    cursor: pointer;
+    border: 1px solid #D6073D;
+}
+.log:focus{
+    border: 1px solid #D6073D;
+}
+
 .password{
     position: absolute;
     width: 358px;
@@ -35,6 +43,15 @@
     box-sizing: border-box;
     border-radius: 10px;
 }
+.password:hover{
+    cursor: pointer;
+    border: 1px solid #D6073D;
+}
+.password:focus{
+    border: 1px solid #D6073D;
+}
+
+
 .btn{
     position: absolute;
     width: 358px;
@@ -50,6 +67,12 @@
     text-align: center;
     color: #FFFFFF;
 }
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 0 0  5px #d83a64;
+
+}
+    
 
 
 /* Profile */
@@ -64,6 +87,9 @@
     flex-direction: column;
     flex-wrap: nowrap;
 }
+.off_menu{
+    display: none;
+}
 .title_img{
     width: 80px;
     height: 20px;
@@ -74,7 +100,12 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
-    color: #BD0D22;
+    color: #303136;
+}
+.profile:hover{
+    color:#BD0D22;
+    cursor: pointer;
+
 }
 .list{
     margin-bottom: 24px;
@@ -84,11 +115,20 @@
     color: #303136;
 
 }
+.list:hover{
+    color:#BD0D22;
+    cursor: pointer;
+}
+
 .statistic{
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
     color: #303136;
+}
+.statistic:hover{
+    color:#BD0D22;
+    cursor: pointer;
 }
 .out{
     display: flex;
@@ -100,6 +140,9 @@
     font-size: 14px;
     line-height: 20px;
     color: #6F849C;
+}
+.out:hover{
+    cursor: pointer;
 }
 .out > img{
     margin-right: 14.43px;
@@ -293,11 +336,12 @@
     background-position: center center;
     background-size: 50% 50%;
     margin-right: 7px; 
+    
 }
 .done_checkbox:checked+label::before{
-    background-image: url(./img/list/Union.jpg)
+    background-image: url(./img/list/Union.jpg);
+    
 }
-
 .done_checkbox_second{
     position:absolute;
     z-index: -1;
@@ -325,11 +369,54 @@
 .done_checkbox_second:checked+label::before{
     background-image: url(./img/list/Union.jpg);
 }
+hr{
+    margin: 16px 44px 16px 40px;
+}
 
 
+/* Statistics */
+.container_statistics{
+    display: flex;
+}
 
+.main_statistics{
+    background-color:#E5E5E5;
+}
+.statistics_page{
+    border-radius: 20px;
+    background-color: #fff;
+    margin: 98px 57px 38px 47px;
+    width: 920px;
+    height: 584px;
+}
+.grafics{
+    margin: 36px 40px 17px 33px;
+    width: 825px;
+    height: 405px;
+}
+.btn_grafics{
+    margin: 0 42px 0 27px;
+    display: flex;
 
-
-
-
-
+}
+.btn_grafics > button{
+    background-color: #FFFFFF;
+    padding: 8px 13px;
+    height: 32px;
+    color: #CBCBCB;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    border: 1px solid #CBCBCB;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.btn_grafics > button:hover{
+    cursor: pointer;
+    color: #BD0D22;
+    border: 1px solid #BD0D22;
+}
+.no_statistic{
+    display: none;
+}
